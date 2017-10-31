@@ -18,6 +18,7 @@
 </head>
 <body>
 
+<h1>Ledige p-pladser i Århus</h1>
 
 <?php
 
@@ -30,7 +31,7 @@ function pApi()
     // Set cURL options
     curl_setopt($ch, CURLOPT_URL, 'http://www.odaa.dk/api/action/datastore_search?resource_id=2a82a145-0195-4081-a13c-b0e587e9b89c');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_USERAGENT, 'api tut');
+    curl_setopt($ch, CURLOPT_USERAGENT, 'min pApi');
     // Parse result
     $result = curl_exec($ch);
     // Close connection when done
@@ -40,7 +41,7 @@ function pApi()
 }
 // Test CVRAPI
 //print_r( parkeringapi('records') );
-print_r("Her ses ledige p-pladser i Århus parkeringshuse: ");
+//print_r("Her ses ledige p-pladser i Århus parkeringshuse: ");
 
 //opretter tabel
 
